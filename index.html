@@ -568,7 +568,7 @@ function openModal(p) {
 
   const slidesHTML = p.slides.map((s, i) => `
     <div class="gallery-slide">
-      <img src="images/${s.img}" alt="${p.title} screenshot ${i+1}" loading="lazy"
+      <img src="${s.img}" alt="${p.title} screenshot ${i+1}" loading="lazy"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';this.nextElementSibling.classList.add('proj-thumb-placeholder');this.nextElementSibling.innerHTML='<span style=\\'font-size:28px;opacity:0.3\\'>🖼️</span><span style=\\'font-size:12px;color:var(--muted);letter-spacing:1px\\'>Image: ${s.img.replace('images/','')}</span>'"
       />
       <div style="display:none"></div>
